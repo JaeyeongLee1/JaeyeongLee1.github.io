@@ -54,8 +54,8 @@ a:hover {
 }
 
 .portrait-wrap {
-  width: 252px;
-  height: 302.4px;
+  width: 277.2px;
+  height: 332.64px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -437,10 +437,10 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #cbbcaf;
+  border: 1px solid #cdbbc0;
   border-radius: 4px;
   background: #ffffff;
-  color: #725c48;
+  color: #6b3f4a;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 650;
