@@ -427,6 +427,7 @@ main {
 
 .publication-label {
   padding-top: 0;
+  transform: translateY(-1px);
 }
 
 .publication-label span {
