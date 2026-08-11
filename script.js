@@ -14,6 +14,7 @@ if (profilePhoto && photoFallback) {
 const publicationLabels = document.querySelectorAll('.publication-label span');
 publicationLabels.forEach((label) => {
   label.style.border = 'none';
+  label.style.fontSize = '15px';
   if (label.textContent.trim() !== 'PREP.') {
     label.style.color = '#29475d';
   }
