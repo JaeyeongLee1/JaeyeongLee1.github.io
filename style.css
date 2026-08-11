@@ -365,30 +365,30 @@ main {
 .pub-meta {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 11px;
-  font-size: 15.5px;
-  font-weight: 700;
+  gap: 9px;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.055em;
 }
 
 .venue {
-  color: var(--accent);
-  font-size: 19px;
-  font-weight: 800;
+  color: #315f86;
+  font-size: 16.5px;
+  font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.045em;
 }
 
 .year {
-  color: #8b96a2;
-  font-size: 15px;
-  font-weight: 650;
+  color: #9aa3ad;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .year::before {
   content: "·";
-  margin-right: 10px;
+  margin-right: 9px;
+  color: #c2c9d0;
 }
 
 .publication h3 {
@@ -602,11 +602,11 @@ footer p {
   }
 
   .venue {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .year {
-    font-size: 14.5px;
+    font-size: 13.5px;
   }
 
   .publication h3 {
