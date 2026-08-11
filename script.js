@@ -18,3 +18,15 @@ publicationLabels.forEach((label) => {
     label.style.color = '#29475d';
   }
 });
+
+const publicationLabelRows = document.querySelectorAll('.publication-label');
+const mobilePublicationQuery = window.matchMedia('(max-width: 620px)');
+
+const syncPublicationLabels = () => {
+  publicationLabelRows.forEach((labelRow) => {
+    labelRow.hidden = mobilePublicationQuery.matches;
+  });
+};
+
+syncPublicationLabels();
+mobilePublicationQuery.addEventListener('change', syncPublicationLabels);
