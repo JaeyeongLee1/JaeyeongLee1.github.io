@@ -337,11 +337,11 @@ main {
 }
 
 .publication-group + .publication-group {
-  margin-top: 40px;
+  margin-top: 14px;
 }
 
 .publication-group-title {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   color: #4d5966;
   font-size: 19px;
   line-height: 1.4;
