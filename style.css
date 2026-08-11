@@ -447,6 +447,10 @@ main {
   letter-spacing: 0.035em;
 }
 
+.publications-section > .publication-group:not(:last-of-type) .publication-label span {
+  font-size: 15px;
+}
+
 .publications-section > .publication-group:last-of-type .publication-label span {
   border-color: #cfd4d9;
   color: #6f7780;
@@ -727,6 +731,10 @@ footer p {
     width: auto;
     min-width: 78px;
     min-height: 25px;
+    font-size: 13px;
+  }
+
+  .publications-section > .publication-group:not(:last-of-type) .publication-label span {
     font-size: 13px;
   }
 
