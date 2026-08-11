@@ -21,6 +21,10 @@ publicationLabels.forEach((label) => {
 });
 
 const publicationLabelRows = document.querySelectorAll('.publication-label');
+publicationLabelRows.forEach((labelRow) => {
+  labelRow.style.transform = 'translateY(-2px)';
+});
+
 const mobilePublicationQuery = window.matchMedia('(max-width: 620px)');
 
 const syncPublicationLabels = () => {
