@@ -11,10 +11,7 @@ if (profilePhoto && photoFallback) {
   });
 }
 
-const prepLabel = document.querySelector(
-  '.publications-section > .publication-group:last-of-type .publication-label span'
-);
-
-if (prepLabel) {
-  prepLabel.style.border = 'none';
-}
+const publicationLabels = document.querySelectorAll('.publication-label span');
+publicationLabels.forEach((label) => {
+  label.style.border = 'none';
+});
