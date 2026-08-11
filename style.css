@@ -447,6 +447,11 @@ main {
   letter-spacing: 0.035em;
 }
 
+.publications-section > .publication-group:last-of-type .publication-label span {
+  border-color: #cfd4d9;
+  color: #6f7780;
+}
+
 .publication-content {
   min-width: 0;
 }
