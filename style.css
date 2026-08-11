@@ -444,6 +444,23 @@ main {
   text-transform: uppercase;
 }
 
+.pub-type {
+  min-width: 20px;
+  height: 19px;
+  padding: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8e1e8;
+  border-radius: 4px;
+  background: #f8fafc;
+  color: #60788d;
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
 .venue {
   color: #315f86;
   font-size: 14.5px;
@@ -700,6 +717,12 @@ footer p {
 
   .publication {
     padding: 16px 0 17px;
+  }
+
+  .pub-type {
+    min-width: 19px;
+    height: 18px;
+    font-size: 11px;
   }
 
   .venue {
