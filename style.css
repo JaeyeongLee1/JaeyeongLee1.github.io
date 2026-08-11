@@ -112,30 +112,87 @@ a:hover {
   line-height: 1.5;
 }
 
-.sidebar-links {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.sidebar-contact {
+  width: 220px;
   margin-top: 20px;
   padding-top: 15px;
   border-top: 1px solid var(--line);
-  width: 190px;
 }
 
-.sidebar-links a {
-  width: fit-content;
-  color: #455363;
-  font-size: 17px;
-  border-bottom: 1px solid transparent;
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 100%;
+  color: #566372;
+  font-size: 14.5px;
+  line-height: 1.35;
 }
 
-.sidebar-links a:hover {
+.contact-email svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: #7b8897;
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-email:hover {
   color: var(--accent);
-  border-bottom-color: #adc4d8;
+}
+
+.contact-email:hover svg {
+  stroke: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e7ec;
+  border-radius: 50%;
+  background: #fafbfd;
+  color: #778493;
+  transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.social-link svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-color: #c6d5e1;
+  background: #f5f8fb;
+}
+
+.linkedin-mark {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .sidebar-note {
-  margin-top: 16px;
+  margin-top: 14px;
   color: #9aa3ad;
   font-size: 14.5px;
 }
@@ -526,10 +583,8 @@ footer p {
     margin: 0;
   }
 
-  .sidebar-links {
+  .sidebar-contact {
     width: auto;
-    flex-direction: row;
-    gap: 16px;
     margin-top: 12px;
     padding-top: 10px;
   }
@@ -567,9 +622,22 @@ footer p {
     font-size: 16.5px;
   }
 
-  .affiliation,
-  .sidebar-links a {
+  .affiliation {
     font-size: 16px;
+  }
+
+  .contact-email {
+    font-size: 14px;
+  }
+
+  .social-links {
+    gap: 7px;
+    margin-top: 10px;
+  }
+
+  .social-link {
+    width: 28px;
+    height: 28px;
   }
 
   .top-nav {
