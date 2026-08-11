@@ -24,6 +24,8 @@ publicationLabels.forEach((label) => {
   } else if (groupName === 'Conference Proceedings') {
     label.style.color = '#29475d';
     label.style.borderColor = '#afbdc8';
+  } else if (groupName === 'Work in Preparation') {
+    label.style.border = 'none';
   }
 });
 
