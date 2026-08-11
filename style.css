@@ -183,15 +183,21 @@ main {
 
 .section h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 32px;
-  line-height: 1.25;
-  letter-spacing: -0.45px;
-  font-weight: 600;
+  color: #56616e;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.1px;
+  font-weight: 500;
 }
 
 .intro-section h2 {
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 39px;
+  line-height: 1.25;
+  letter-spacing: -0.45px;
+  font-weight: 600;
   margin-bottom: 24px;
 }
 
@@ -204,7 +210,7 @@ main {
 }
 
 .section-heading {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .interest-list {
@@ -414,6 +420,50 @@ main {
   color: var(--text);
 }
 
+.presentation-group + .presentation-group {
+  margin-top: 36px;
+}
+
+.presentation-group-title {
+  margin: 0 0 12px;
+  color: #4d5966;
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.presentation-list {
+  margin: 0;
+  padding: 18px 0 0 24px;
+  border-top: 1px solid var(--line);
+}
+
+.presentation-list li {
+  margin: 0 0 18px;
+  padding-left: 4px;
+  color: #56616e;
+  font-size: 17.5px;
+  line-height: 1.68;
+}
+
+.presentation-list li:last-child {
+  margin-bottom: 0;
+}
+
+.presentation-list a {
+  color: inherit;
+  border-bottom: 1px solid #c4d1dc;
+}
+
+.presentation-list a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.presentation-list strong {
+  color: var(--text);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -507,12 +557,12 @@ footer p {
     padding: 44px 0 42px;
   }
 
-  .intro-section h2 {
-    font-size: 33px;
+  .section h2 {
+    font-size: 22px;
   }
 
-  .section h2 {
-    font-size: 29px;
+  .intro-section h2 {
+    font-size: 33px;
   }
 
   .intro {
@@ -546,7 +596,8 @@ footer p {
     gap: 10px;
   }
 
-  .publication-group-title {
+  .publication-group-title,
+  .presentation-group-title {
     font-size: 18px;
   }
 
@@ -563,7 +614,8 @@ footer p {
   }
 
   .authors,
-  .publication-venue {
+  .publication-venue,
+  .presentation-list li {
     font-size: 17px;
   }
 
