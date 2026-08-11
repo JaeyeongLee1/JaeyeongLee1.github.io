@@ -549,8 +549,11 @@ main {
 }
 
 .presentation-list strong {
-  color: #48657a;
-  font-weight: 650;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 footer {
