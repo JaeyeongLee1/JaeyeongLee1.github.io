@@ -436,9 +436,10 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
-  background: #587895;
-  color: #ffffff;
+  border: 1px solid #a9bfd0;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #315f86;
   font-size: 12.5px;
   line-height: 1.2;
   font-weight: 650;
