@@ -441,8 +441,8 @@ main {
 }
 
 .authors strong {
-  color: #2458b3;
-  font-weight: 600;
+  color: #48657a;
+  font-weight: 650;
 }
 
 .presentation-group + .presentation-group {
@@ -486,8 +486,8 @@ main {
 }
 
 .presentation-list strong {
-  color: #2458b3;
-  font-weight: 600;
+  color: #48657a;
+  font-weight: 650;
 }
 
 footer {
