@@ -371,16 +371,16 @@ main {
 }
 
 .pub-meta {
-  order: 2;
+  order: 1;
   display: flex;
   align-items: center;
   gap: 7px;
-  margin: 1px 0 5px;
+  margin: 0 0 6px;
   text-transform: uppercase;
 }
 
 .venue {
-  color: #56616e;
+  color: #315f86;
   font-size: 14.5px;
   font-weight: 650;
   line-height: 1.2;
@@ -388,7 +388,7 @@ main {
 }
 
 .year {
-  color: #a0a8b1;
+  color: #8196a8;
   font-size: 13.5px;
   font-weight: 500;
   letter-spacing: 0.025em;
@@ -397,12 +397,12 @@ main {
 .year::before {
   content: "·";
   margin-right: 7px;
-  color: #c4cad0;
+  color: #aec0cf;
 }
 
 .publication h3 {
-  order: 1;
-  margin: 0 0 2px;
+  order: 2;
+  margin: 0 0 3px;
   font-size: 20px;
   line-height: 1.4;
   font-weight: 650;
