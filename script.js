@@ -14,8 +14,16 @@ if (profilePhoto && photoFallback) {
 const publicationLabels = document.querySelectorAll('.publication-label span');
 publicationLabels.forEach((label) => {
   label.style.fontSize = '14px';
-  if (label.textContent.trim() !== 'PREP.') {
+  const group = label.closest('.publication-group');
+  const title = group && group.querySelector('.publication-group-title');
+  const groupName = title ? title.textContent.trim() : '';
+
+  if (groupName === 'Journal Articles') {
+    label.style.color = '#6b3f4a';
+    label.style.borderColor = '#cdbbc0';
+  } else if (groupName === 'Conference Proceedings') {
     label.style.color = '#29475d';
+    label.style.borderColor = '#afbdc8';
   }
 });
 
