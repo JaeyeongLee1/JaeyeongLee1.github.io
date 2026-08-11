@@ -302,8 +302,12 @@ main {
 }
 
 .education-item h3 {
-  margin: 0 0 1px;
-  font-size: 18px;
+  margin: 0 0 2px;
+  color: #48657a;
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.045em;
 }
 
 .education-degree {
