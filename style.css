@@ -24,7 +24,7 @@ body {
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.72;
+  line-height: 1.64;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,7 +50,7 @@ a:hover {
   position: sticky;
   top: 46px;
   min-height: calc(100vh - 92px);
-  padding: 48px 0 32px;
+  padding: 44px 0 28px;
 }
 
 .portrait-wrap {
@@ -62,7 +62,7 @@ a:hover {
   border-radius: 5px;
   background: linear-gradient(145deg, #eaf0f5, #f6f8fa);
   border: 1px solid var(--line);
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .portrait {
@@ -106,18 +106,18 @@ a:hover {
 }
 
 .affiliation {
-  margin: 6px 0 0;
+  margin: 5px 0 0;
   color: var(--muted);
   font-size: 17.5px;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .sidebar-links {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-top: 24px;
-  padding-top: 18px;
+  gap: 4px;
+  margin-top: 20px;
+  padding-top: 15px;
   border-top: 1px solid var(--line);
   width: 190px;
 }
@@ -135,21 +135,21 @@ a:hover {
 }
 
 .sidebar-note {
-  margin-top: 20px;
+  margin-top: 16px;
   color: #9aa3ad;
   font-size: 14.5px;
 }
 
 main {
   min-width: 0;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 }
 
 .top-nav {
   display: flex;
   justify-content: flex-end;
-  gap: 27px;
-  min-height: 76px;
+  gap: 25px;
+  min-height: 68px;
   align-items: center;
   border-bottom: 1px solid var(--line);
   color: #66717e;
@@ -162,18 +162,18 @@ main {
 }
 
 .section {
-  padding: 58px 0 54px;
+  padding: 46px 0 42px;
   border-bottom: 1px solid var(--line);
-  scroll-margin-top: 24px;
+  scroll-margin-top: 20px;
 }
 
 .intro-section {
-  padding-top: 72px;
+  padding-top: 58px;
 }
 
 .eyebrow,
 .section-kicker {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -195,22 +195,22 @@ main {
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 39px;
-  line-height: 1.25;
+  line-height: 1.22;
   letter-spacing: -0.45px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .intro {
   max-width: 745px;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: #46515e;
   font-size: 20.5px;
-  line-height: 1.75;
+  line-height: 1.66;
 }
 
 .section-heading {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .interest-list {
@@ -220,10 +220,10 @@ main {
 }
 
 .interest-list article {
-  padding: 24px 0 22px;
+  padding: 18px 0 17px;
   display: grid;
   grid-template-columns: 225px 1fr;
-  gap: 30px;
+  gap: 26px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -235,7 +235,7 @@ main {
 .timeline h3 {
   margin: 0;
   font-size: 18px;
-  line-height: 1.45;
+  line-height: 1.4;
   font-weight: 700;
 }
 
@@ -243,11 +243,12 @@ main {
   margin: 0;
   color: var(--muted);
   font-size: 18px;
+  line-height: 1.55;
 }
 
 .timeline {
   border-top: 1px solid var(--line);
-  padding-top: 22px;
+  padding-top: 18px;
 }
 
 .timeline-item {
@@ -286,7 +287,7 @@ main {
   display: grid;
   grid-template-columns: 190px 1fr;
   gap: 28px;
-  padding: 24px 0;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -301,7 +302,7 @@ main {
 }
 
 .education-item h3 {
-  margin: 0 0 2px;
+  margin: 0 0 1px;
   font-size: 18px;
 }
 
@@ -312,9 +313,10 @@ main {
 }
 
 .pub-links {
+  order: 5;
   display: flex;
-  gap: 14px;
-  margin: 8px 0 0;
+  gap: 12px;
+  margin: 5px 0 0;
   font-size: 15.5px;
 }
 
@@ -333,20 +335,20 @@ main {
   color: var(--muted);
   font-size: 16.5px;
   white-space: nowrap;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 
 .publication-group + .publication-group {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .publication-group-title {
-  margin: 0 0 8px;
-  color: #4d5966;
-  font-size: 19px;
-  line-height: 1.4;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  margin: 0 0 5px;
+  color: #596572;
+  font-size: 17.5px;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .publication-list {
@@ -354,7 +356,9 @@ main {
 }
 
 .publication {
-  padding: 27px 0 28px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0 19px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -363,38 +367,40 @@ main {
 }
 
 .pub-meta {
+  order: 2;
   display: flex;
   align-items: center;
-  gap: 9px;
-  margin-bottom: 8px;
+  gap: 7px;
+  margin: 1px 0 5px;
   text-transform: uppercase;
 }
 
 .venue {
-  color: #315f86;
-  font-size: 16.5px;
-  font-weight: 700;
+  color: #56616e;
+  font-size: 14.5px;
+  font-weight: 650;
   line-height: 1.2;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.065em;
 }
 
 .year {
-  color: #9aa3ad;
-  font-size: 14px;
+  color: #a0a8b1;
+  font-size: 13.5px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.025em;
 }
 
 .year::before {
   content: "·";
-  margin-right: 9px;
-  color: #c2c9d0;
+  margin-right: 7px;
+  color: #c4cad0;
 }
 
 .publication h3 {
-  margin: 0 0 7px;
+  order: 1;
+  margin: 0 0 2px;
   font-size: 20px;
-  line-height: 1.48;
+  line-height: 1.4;
   font-weight: 650;
 }
 
@@ -407,12 +413,17 @@ main {
   margin: 0;
   color: var(--muted);
   font-size: 17.5px;
-  line-height: 1.62;
+  line-height: 1.5;
+}
+
+.authors {
+  order: 3;
 }
 
 .publication-venue {
+  order: 4;
   color: #56616e;
-  font-size: 18px;
+  font-size: 17.5px;
   font-weight: 500;
 }
 
@@ -421,29 +432,29 @@ main {
 }
 
 .presentation-group + .presentation-group {
-  margin-top: 36px;
+  margin-top: 22px;
 }
 
 .presentation-group-title {
-  margin: 0 0 12px;
-  color: #4d5966;
-  font-size: 19px;
-  line-height: 1.4;
-  font-weight: 700;
+  margin: 0 0 7px;
+  color: #596572;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 600;
 }
 
 .presentation-list {
   margin: 0;
-  padding: 18px 0 0 24px;
+  padding: 12px 0 0 24px;
   border-top: 1px solid var(--line);
 }
 
 .presentation-list li {
-  margin: 0 0 18px;
-  padding-left: 4px;
+  margin: 0 0 12px;
+  padding-left: 3px;
   color: #56616e;
   font-size: 17.5px;
-  line-height: 1.68;
+  line-height: 1.58;
 }
 
 .presentation-list li:last-child {
@@ -470,7 +481,7 @@ footer {
   gap: 16px;
   color: #9aa3ad;
   font-size: 14px;
-  padding: 26px 0 10px;
+  padding: 22px 0 8px;
 }
 
 footer p {
@@ -486,7 +497,7 @@ footer p {
   .sidebar {
     position: static;
     min-height: auto;
-    padding: 38px 0 20px;
+    padding: 34px 0 18px;
     display: grid;
     grid-template-columns: 120px 1fr;
     column-gap: 25px;
@@ -504,12 +515,12 @@ footer p {
     width: auto;
     flex-direction: row;
     gap: 16px;
-    margin-top: 14px;
-    padding-top: 12px;
+    margin-top: 12px;
+    padding-top: 10px;
   }
 
   .sidebar-note {
-    margin: 10px 0 0;
+    margin: 8px 0 0;
   }
 
   .top-nav {
@@ -547,14 +558,14 @@ footer p {
   }
 
   .top-nav {
-    gap: 20px;
-    min-height: 62px;
+    gap: 18px;
+    min-height: 58px;
     font-size: 15px;
   }
 
   .section,
   .intro-section {
-    padding: 44px 0 42px;
+    padding: 36px 0 34px;
   }
 
   .section h2 {
@@ -567,11 +578,13 @@ footer p {
 
   .intro {
     font-size: 19px;
+    line-height: 1.6;
   }
 
   .interest-list article {
     grid-template-columns: 1fr;
-    gap: 7px;
+    gap: 5px;
+    padding: 16px 0 15px;
   }
 
   .interest-list h3,
@@ -582,7 +595,8 @@ footer p {
 
   .education-item {
     grid-template-columns: 1fr;
-    gap: 5px;
+    gap: 4px;
+    padding: 16px 0;
   }
 
   .education-date,
@@ -593,20 +607,24 @@ footer p {
   .publication-heading {
     align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .publication-group-title,
   .presentation-group-title {
-    font-size: 18px;
+    font-size: 17px;
+  }
+
+  .publication {
+    padding: 16px 0 17px;
   }
 
   .venue {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .year {
-    font-size: 13.5px;
+    font-size: 13px;
   }
 
   .publication h3 {
