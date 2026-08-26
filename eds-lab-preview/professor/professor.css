@@ -157,13 +157,13 @@ a { color: inherit; }
 
 .professor-card {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 54px;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 50px;
   align-items: start;
 }
 .professor-photo {
-  width: 300px;
-  height: 375px;
+  width: 270px;
+  height: 338px;
   display: block;
   object-fit: cover;
   object-position: center top;
@@ -279,12 +279,12 @@ a { color: inherit; }
     column-gap: 36px;
   }
   .professor-card {
-    grid-template-columns: 240px minmax(0, 1fr);
-    gap: 36px;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 34px;
   }
   .professor-photo {
-    width: 240px;
-    height: 300px;
+    width: 220px;
+    height: 275px;
   }
   .interests {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -312,7 +312,7 @@ a { color: inherit; }
   }
   .professor-card { grid-template-columns: 1fr; }
   .professor-photo {
-    width: min(300px, 100%);
+    width: min(270px, 100%);
     height: auto;
     aspect-ratio: 4 / 5;
   }
