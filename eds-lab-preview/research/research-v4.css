@@ -2,7 +2,7 @@
 
 /* Publication hierarchy refinement */
 .publication-row {
-  grid-template-columns: 58px minmax(0, 1fr) minmax(170px, 245px);
+  grid-template-columns: 58px minmax(0, 1fr) minmax(210px, 290px);
   column-gap: 28px;
   align-items: start;
 }
@@ -14,10 +14,10 @@
 .pub-code .code-number {
   display: inline;
 }
-.pub-code.conference .code-letter {
+.pub-code.conference .code-letter,
+.pub-code.conference .code-number {
   color: var(--blue);
 }
-.pub-code.conference .code-number,
 .pub-code.journal .code-letter,
 .pub-code.journal .code-number {
   color: var(--text);
@@ -31,10 +31,10 @@
   font-size: 13px;
 }
 .pub-meta {
-  margin: 6px 0 0;
-  color: #858b92;
+  margin: 7px 0 0;
+  color: #7d838a;
   font-size: 12.5px;
-  line-height: 1.48;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -43,23 +43,18 @@
   padding-top: 1px;
   color: var(--text);
   text-align: left;
-  line-height: 1.34;
+  line-height: 1.3;
 }
 .venue-name {
   display: block;
-  font-size: 14px;
-  font-weight: 650;
-  letter-spacing: -0.012em;
-}
-.pub-code.conference + .pub-main + .venue .venue-name {
   font-size: 16px;
-  font-weight: 780;
+  font-weight: 760;
   letter-spacing: -0.018em;
 }
 
 @media (max-width: 1060px) {
   .publication-row {
-    grid-template-columns: 52px minmax(0, 1fr) minmax(155px, 215px);
+    grid-template-columns: 52px minmax(0, 1fr) minmax(190px, 245px);
     column-gap: 21px;
   }
 }
@@ -73,8 +68,7 @@
     grid-column: 2;
     margin-top: 2px;
   }
-  .venue-name,
-  .pub-code.conference + .pub-main + .venue .venue-name {
+  .venue-name {
     font-size: 14px;
   }
 }
