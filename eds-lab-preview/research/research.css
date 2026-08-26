@@ -224,7 +224,7 @@ a { color: inherit; }
 .authors {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15.5px !important;
   line-height: 1.45;
 }
 
@@ -348,4 +348,10 @@ a { color: inherit; }
   .pub-head-main {
     grid-column: 1 !important;
   }
+}
+
+/* Make author and full bibliographic lines easier to read without changing the publication hierarchy. */
+.pub-meta::before,
+.pub-main::after {
+  font-size: 15px !important;
 }
