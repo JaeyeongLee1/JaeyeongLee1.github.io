@@ -175,3 +175,41 @@ main>.year-section:nth-of-type(16) .publication-row:nth-child(1) .pub-meta::befo
 main>.year-section:nth-of-type(16) .publication-row:nth-child(2) .pub-meta::before{content:"Data Mining and Knowledge Discovery, 26(3), 512-532."}
 main>.year-section:nth-of-type(17) .publication-row:nth-child(1) .pub-meta::before{content:"Journal of Nonparametric Statistics, 24(3), 665-680."}
 main>.year-section:nth-of-type(18) .publication-row:nth-child(1) .pub-meta::before{content:"IEEE International Conference on Data Mining (ICDM), 28-37."}
+
+/* Refined section headings: remove duplicated eyebrow labels and stack the legend. */
+.intro-label,
+.section-label {
+  display: none !important;
+}
+
+.pub-head-main {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.legend {
+  margin: 0;
+}
+
+/* Missing full bibliographic lines for conference records without a pub-meta node. */
+main > .year-section:nth-of-type(8) .publication-row:nth-child(1) .pub-main::after,
+main > .year-section:nth-of-type(8) .publication-row:nth-child(2) .pub-main::after,
+main > .year-section:nth-of-type(8) .publication-row:nth-child(3) .pub-main::after,
+main > .year-section:nth-of-type(9) .publication-row:nth-child(1) .pub-main::after,
+main > .year-section:nth-of-type(13) .publication-row:nth-child(1) .pub-main::after,
+main > .year-section:nth-of-type(13) .publication-row:nth-child(2) .pub-main::after {
+  display: block;
+  margin-top: 7px;
+  color: #7d838a;
+  font-size: 12.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+main > .year-section:nth-of-type(8) .publication-row:nth-child(1) .pub-main::after { content: "Conference on Neural Information Processing Systems (NeurIPS) 2021."; }
+main > .year-section:nth-of-type(8) .publication-row:nth-child(2) .pub-main::after { content: "Conference on Neural Information Processing Systems (NeurIPS) 2021."; }
+main > .year-section:nth-of-type(8) .publication-row:nth-child(3) .pub-main::after { content: "International Conference on Machine Learning (ICML) 2021."; }
+main > .year-section:nth-of-type(9) .publication-row:nth-child(1) .pub-main::after { content: "Conference on Neural Information Processing Systems (NeurIPS) 2020."; }
+main > .year-section:nth-of-type(13) .publication-row:nth-child(1) .pub-main::after { content: "ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp)."; }
+main > .year-section:nth-of-type(13) .publication-row:nth-child(2) .pub-main::after { content: "International Joint Conference on Articial Intelligence (IJCAI)."; }
