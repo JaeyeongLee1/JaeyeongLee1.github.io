@@ -195,6 +195,9 @@ a { color: inherit; }
   font-weight: 700;
   letter-spacing: -0.018em;
 }
+.professor-info .institution {
+  margin-top: 24px;
+}
 .contact-block {
   margin-top: 28px;
   padding: 0;
