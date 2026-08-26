@@ -4,7 +4,7 @@
   --muted: #5f6368;
   --line: #e2e5e8;
   --line-strong: #bcc2c8;
-  --eds-accent: #c9562a;
+  --eds-accent: #c96a2f;
   --max: 1280px;
   --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -82,7 +82,7 @@ a { color: inherit; }
 .page-nav a {
   position: relative;
   color: #4b4f54;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
 }
 .page-nav a.active {
