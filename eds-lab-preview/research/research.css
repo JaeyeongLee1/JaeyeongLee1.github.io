@@ -328,3 +328,18 @@ a { color: inherit; }
   .pub-main h3 { font-size: 17px; }
   .footer-inner { flex-direction: column; }
 }
+
+/* Keep the large section titles in the original second-column position after hiding eyebrow labels. */
+@media (min-width: 701px) {
+  .research-intro h1,
+  .pub-head-main {
+    grid-column: 2 !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .research-intro h1,
+  .pub-head-main {
+    grid-column: 1 !important;
+  }
+}
