@@ -134,7 +134,7 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: 190px minmax(0, 1fr);
   column-gap: 58px;
-  padding: 58px 0 68px;
+  padding: 48px 0 54px;
 }
 .section > h2 {
   position: relative;
@@ -153,7 +153,11 @@ a { color: inherit; }
   margin-bottom: 15px;
   background: #151515;
 }
-.section-content { min-width: 0; }
+.section-content {
+  min-width: 0;
+  border-top: 1px solid var(--text);
+  padding-top: 20px;
+}
 
 .professor-card {
   display: grid;
@@ -171,7 +175,7 @@ a { color: inherit; }
 }
 .professor-info {
   max-width: 760px;
-  padding-top: 2px;
+  padding-top: 0;
 }
 .professor-info h3 {
   margin: 0 0 22px;
@@ -203,12 +207,12 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 34px;
-  padding: 4px 0 2px;
+  padding: 0 0 2px;
 }
 .interests div {
   position: relative;
-  min-height: 82px;
-  padding-top: 19px;
+  min-height: 76px;
+  padding-top: 17px;
   display: flex;
   align-items: flex-start;
   font-size: clamp(20px, 1.85vw, 25px);
@@ -227,7 +231,7 @@ a { color: inherit; }
 }
 .lab-goal {
   max-width: 900px;
-  margin: 28px 0 0;
+  margin: 24px 0 0;
   padding-top: 0;
   color: #4f555c;
   font-size: 16px;
@@ -242,11 +246,12 @@ a { color: inherit; }
 }
 .clean-list li {
   margin: 0;
-  padding: 11px 0 12px;
+  padding: 8px 0 9px;
   font-size: 17px;
   line-height: 1.58;
   letter-spacing: -0.008em;
 }
+.clean-list li:first-child { padding-top: 0; }
 
 .site-footer {
   border-top: 1px solid var(--text);
@@ -288,7 +293,7 @@ a { color: inherit; }
   }
   .interests {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px 36px;
+    gap: 26px 36px;
   }
 }
 
@@ -303,13 +308,14 @@ a { color: inherit; }
   .page { padding-top: 48px; }
   .section {
     grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 46px 0 52px;
+    gap: 20px;
+    padding: 38px 0 44px;
   }
   .section > h2::before {
     width: 22px;
     margin-bottom: 10px;
   }
+  .section-content { padding-top: 16px; }
   .professor-card { grid-template-columns: 1fr; }
   .professor-photo {
     width: min(270px, 100%);
@@ -325,8 +331,8 @@ a { color: inherit; }
     width: min(100% - 32px, var(--max));
   }
   .intro h1 { font-size: 42px; }
-  .interests { grid-template-columns: 1fr; gap: 20px; }
-  .interests div { min-height: 56px; }
+  .interests { grid-template-columns: 1fr; gap: 18px; }
+  .interests div { min-height: 54px; }
   .clean-list li { font-size: 16px; }
   .footer-inner { flex-direction: column; }
 }
