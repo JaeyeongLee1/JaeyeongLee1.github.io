@@ -313,6 +313,9 @@ a { color: inherit; }
     margin-top: 18px;
     font-size: 28px;
   }
+  .venue {
+    display: none;
+  }
 }
 
 @media (max-width: 520px) {
