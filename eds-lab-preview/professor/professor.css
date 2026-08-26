@@ -1,0 +1,228 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #5f6368;
+  --line: #d9dde2;
+  --line-dark: #1a1a1a;
+  --accent: #004191;
+  --max: 1180px;
+  --font: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+
+.site-header {
+  background: #fff;
+  border-top: 4px solid var(--accent);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  width: min(var(--max), calc(100% - 64px));
+  margin: 0 auto;
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 32px;
+}
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  min-width: 0;
+  text-decoration: none;
+}
+.brand strong {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+}
+.brand span {
+  color: var(--muted);
+  font-size: 13px;
+}
+.page-label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.page {
+  width: min(var(--max), calc(100% - 64px));
+  margin: 0 auto;
+  padding: 58px 0 100px;
+}
+
+.intro {
+  padding: 0 0 42px;
+  border-bottom: 1px solid var(--line-dark);
+}
+.intro h1 {
+  margin: 0 0 8px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+.intro p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  column-gap: 52px;
+  padding: 44px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+.section > h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.section-content { min-width: 0; }
+
+.professor-card {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+}
+.professor-photo {
+  width: 250px;
+  height: 312px;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  background: #f2f3f5;
+}
+.professor-info {
+  max-width: 720px;
+}
+.professor-info h3 {
+  margin: -3px 0 20px;
+  font-size: clamp(29px, 3vw, 38px);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.professor-info p { margin: 0 0 7px; }
+.professor-info .chair {
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.contact-block {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.contact-block strong { font-weight: 700; }
+
+.interests {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line-dark);
+}
+.interests div {
+  padding: 15px 0 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 18px;
+}
+.interests div:nth-child(even) {
+  padding-left: 24px;
+  border-left: 1px solid var(--line);
+}
+.lab-goal {
+  max-width: 850px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.clean-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line-dark);
+}
+.clean-list li {
+  margin: 0;
+  padding: 12px 0 13px;
+  border-bottom: 1px solid var(--line);
+}
+.clean-list li:last-child { border-bottom: 0; }
+
+.site-footer {
+  border-top: 1px solid var(--line-dark);
+  background: #fff;
+}
+.footer-inner {
+  width: min(var(--max), calc(100% - 64px));
+  margin: 0 auto;
+  padding: 20px 0 38px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 860px) {
+  .header-inner,
+  .page,
+  .footer-inner {
+    width: min(100% - 40px, var(--max));
+  }
+  .header-inner {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 14px 0;
+  }
+  .brand {
+    display: grid;
+    gap: 2px;
+  }
+  .brand strong { white-space: normal; }
+  .section {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .professor-card {
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 30px;
+  }
+  .professor-photo {
+    width: 210px;
+    height: 262px;
+  }
+}
+
+@media (max-width: 620px) {
+  .page { padding-top: 40px; }
+  .professor-card { grid-template-columns: 1fr; }
+  .professor-photo {
+    width: 220px;
+    height: 275px;
+  }
+  .interests { grid-template-columns: 1fr; }
+  .interests div:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .footer-inner { flex-direction: column; }
+}
