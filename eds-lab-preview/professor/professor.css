@@ -62,7 +62,7 @@ a { color: inherit; }
 .brand strong .eds-e,
 .brand strong .eds-d,
 .brand strong .eds-s {
-  color: var(--eds-accent);
+  color: var(--text);
   display: inline-block;
   font-size: 1.34em;
   line-height: 0.72;
@@ -74,10 +74,29 @@ a { color: inherit; }
   color: var(--muted);
   font-size: 13px;
 }
-.page-label {
-  color: var(--text);
+.page-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.page-nav a {
+  position: relative;
+  color: #4b4f54;
   font-size: 13px;
-  font-weight: 500;
+  text-decoration: none;
+}
+.page-nav a.active {
+  color: var(--text);
+  font-weight: 600;
+}
+.page-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -11px;
+  height: 2px;
+  background: var(--text);
 }
 
 .page {
@@ -276,9 +295,11 @@ a { color: inherit; }
 @media (max-width: 720px) {
   .header-inner {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 12px;
     padding: 16px 0;
   }
+  .page-nav { gap: 18px; }
+  .page-nav a.active::after { bottom: -6px; }
   .page { padding-top: 48px; }
   .section {
     grid-template-columns: 1fr;
