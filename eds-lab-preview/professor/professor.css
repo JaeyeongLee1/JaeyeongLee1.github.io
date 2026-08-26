@@ -82,7 +82,7 @@ a { color: inherit; }
 .page-nav a {
   position: relative;
   color: #4b4f54;
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
 }
 .page-nav a.active {
