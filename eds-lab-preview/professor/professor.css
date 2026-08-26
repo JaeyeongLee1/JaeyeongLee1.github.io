@@ -153,11 +153,7 @@ a { color: inherit; }
   margin-bottom: 15px;
   background: #151515;
 }
-.section-content {
-  min-width: 0;
-  border-top: 1px solid var(--text);
-  padding-top: 20px;
-}
+.section-content { min-width: 0; }
 
 .professor-card {
   display: grid;
@@ -318,7 +314,6 @@ a { color: inherit; }
     width: 22px;
     margin-bottom: 10px;
   }
-  .section-content { padding-top: 16px; }
   .professor-card { grid-template-columns: 1fr; }
   .professor-photo {
     width: min(270px, 100%);
