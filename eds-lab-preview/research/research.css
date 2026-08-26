@@ -224,7 +224,7 @@ a { color: inherit; }
 .authors {
   margin: 0;
   color: var(--muted);
-  font-size: 15.5px !important;
+  font-size: 15px !important;
   line-height: 1.45;
 }
 
@@ -237,7 +237,7 @@ a { color: inherit; }
   letter-spacing: -0.012em;
 }
 .venue-name {
-  font-weight: 680 !important;
+  font-weight: 630 !important;
 }
 
 .site-footer {
@@ -353,5 +353,5 @@ a { color: inherit; }
 /* Make author and full bibliographic lines easier to read without changing the publication hierarchy. */
 .pub-meta::before,
 .pub-main::after {
-  font-size: 15px !important;
+  font-size: 14.5px !important;
 }
