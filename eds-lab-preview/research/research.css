@@ -3,7 +3,6 @@
   --text: #111111;
   --muted: #62676d;
   --line: #e1e4e8;
-  --line-strong: #b9bec5;
   --accent: #c9562a;
   --max: 1280px;
   --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -102,8 +101,7 @@ a { color: inherit; }
   padding-bottom: 70px;
   border-bottom: 1px solid var(--text);
 }
-.intro-label,
-.section-label {
+.intro-label {
   padding-top: 10px;
   color: var(--muted);
   font-size: 12px;
@@ -141,136 +139,78 @@ a { color: inherit; }
   line-height: 1.7;
 }
 
-.index-section {
+.publications-section {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
   column-gap: 70px;
-  padding: 54px 0 72px;
-  border-bottom: 1px solid var(--line);
+  padding-top: 74px;
 }
-.topic-index {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 54px;
-  border-top: 1px solid var(--text);
-}
-.topic-index a {
-  display: grid;
-  grid-template-columns: 46px 1fr;
-  gap: 16px;
-  align-items: baseline;
-  padding: 19px 0 20px;
-  border-bottom: 1px solid var(--line);
-  text-decoration: none;
-}
-.topic-index a:nth-child(odd) { padding-right: 16px; }
-.topic-index a:nth-child(even) { padding-left: 16px; }
-.topic-index span {
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .04em;
-}
-.topic-index strong {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-
-.topic-section {
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  column-gap: 70px;
-  padding: 72px 0 82px;
-  border-bottom: 1px solid var(--line);
-  scroll-margin-top: 20px;
-}
-.topic-heading {
+.publication-side {
   position: sticky;
-  top: 24px;
+  top: 28px;
   align-self: start;
 }
-.topic-no {
-  display: block;
-  margin-bottom: 18px;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 750;
-  letter-spacing: .08em;
-}
-.topic-heading h2 {
-  margin: 0;
-  max-width: 150px;
-  font-size: 17px;
-  line-height: 1.28;
+.publication-side h2 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.2;
   font-weight: 650;
   letter-spacing: -0.02em;
 }
-.publication-thread {
-  border-top: 1px solid var(--text);
-}
-.publication-thread article {
-  display: grid;
-  grid-template-columns: 82px minmax(0, 1fr);
-  gap: 30px;
-  padding: 22px 0 24px;
-  border-bottom: 1px solid var(--line);
-}
-.publication-thread .year {
-  padding-top: 3px;
-  color: var(--muted);
-  font-size: 13px;
-  font-variant-numeric: tabular-nums;
-}
-.paper h3 {
-  max-width: 900px;
-  margin: 0 0 8px;
-  font-size: clamp(18px, 1.65vw, 22px);
-  line-height: 1.35;
-  font-weight: 480;
-  letter-spacing: -0.025em;
-}
-.paper p {
+.publication-side p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.6;
 }
-
-.recent-section {
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  column-gap: 70px;
-  padding: 76px 0 28px;
+.publication-stream {
+  border-top: 1px solid var(--text);
 }
-.recent-list { border-top: 1px solid var(--text); }
-.recent-list article {
+.year-group {
   display: grid;
-  grid-template-columns: 52px 70px minmax(0, 1fr) 120px;
-  gap: 24px;
-  align-items: baseline;
-  padding: 18px 0 19px;
+  grid-template-columns: 88px minmax(0, 1fr);
+  column-gap: 28px;
   border-bottom: 1px solid var(--line);
 }
-.recent-list .code {
+.year-heading {
+  padding: 22px 0 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.year-group article {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) minmax(150px, 230px);
+  gap: 22px;
+  align-items: baseline;
+  padding: 20px 0 21px;
+  border-bottom: 1px solid var(--line);
+}
+.year-group article:last-child { border-bottom: 0; }
+.code {
   color: var(--accent);
   font-size: 12px;
   font-weight: 750;
+  letter-spacing: .03em;
 }
-.recent-list .year {
-  color: var(--muted);
-  font-size: 13px;
+.pub h3 {
+  margin: 0 0 6px;
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.38;
+  font-weight: 480;
+  letter-spacing: -0.02em;
 }
-.recent-list h3 {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 470;
-  letter-spacing: -0.015em;
-}
-.recent-list p {
+.pub p {
   margin: 0;
   color: var(--muted);
   font-size: 13px;
+}
+.venue {
+  color: #3f4449;
+  font-size: 13px;
+  line-height: 1.45;
   text-align: right;
 }
 
@@ -295,15 +235,17 @@ a { color: inherit; }
   .brand { display: grid; gap: 2px; }
   .brand strong { white-space: normal; }
   .research-intro,
-  .index-section,
-  .topic-section,
-  .recent-section {
+  .publications-section {
     grid-template-columns: 130px minmax(0, 1fr);
     column-gap: 38px;
   }
-  .publication-thread article { grid-template-columns: 66px minmax(0, 1fr); gap: 22px; }
-  .recent-list article { grid-template-columns: 46px 58px minmax(0, 1fr); }
-  .recent-list p { grid-column: 3; text-align: left; }
+  .year-group article {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+  .venue {
+    grid-column: 2;
+    text-align: left;
+  }
 }
 
 @media (max-width: 720px) {
@@ -316,19 +258,13 @@ a { color: inherit; }
   .page-nav a.active::after { bottom: -6px; }
   .page { padding-top: 52px; }
   .research-intro,
-  .index-section,
-  .topic-section,
-  .recent-section {
+  .publications-section {
     grid-template-columns: 1fr;
     row-gap: 24px;
   }
   .intro-copy { grid-column: 1; }
-  .topic-heading { position: static; }
-  .topic-heading h2 { max-width: none; font-size: 21px; }
-  .topic-index { grid-template-columns: 1fr; }
-  .topic-index a:nth-child(odd),
-  .topic-index a:nth-child(even) { padding-left: 0; padding-right: 0; }
-  .recent-list article { grid-template-columns: 46px 58px minmax(0, 1fr); }
+  .publication-side { position: static; }
+  .year-group { grid-template-columns: 66px minmax(0, 1fr); }
 }
 
 @media (max-width: 520px) {
@@ -337,8 +273,9 @@ a { color: inherit; }
   .footer-inner { width: min(100% - 32px, var(--max)); }
   .research-intro h1 { font-size: 64px; }
   .area-line { font-size: 20px; }
-  .publication-thread article { grid-template-columns: 1fr; gap: 5px; }
-  .recent-list article { grid-template-columns: 46px 1fr; gap: 7px 14px; }
-  .recent-list h3, .recent-list p { grid-column: 2; }
+  .year-group { grid-template-columns: 1fr; }
+  .year-heading { padding-bottom: 4px; }
+  .year-group article { grid-column: 1; grid-template-columns: 42px minmax(0, 1fr); gap: 12px; }
+  .venue { grid-column: 2; }
   .footer-inner { flex-direction: column; }
 }
