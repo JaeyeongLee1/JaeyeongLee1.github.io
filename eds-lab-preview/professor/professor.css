@@ -134,8 +134,7 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: 190px minmax(0, 1fr);
   column-gap: 58px;
-  padding: 58px 0 64px;
-  border-bottom: 1px solid var(--line);
+  padding: 58px 0 68px;
 }
 .section > h2 {
   position: relative;
@@ -191,8 +190,7 @@ a { color: inherit; }
 }
 .contact-block {
   margin-top: 28px;
-  padding: 19px 0 0;
-  border-top: 1px solid var(--line-strong);
+  padding: 0;
   background: transparent;
 }
 .contact-block p:last-child { margin-bottom: 0; }
@@ -225,9 +223,8 @@ a { color: inherit; }
 }
 .lab-goal {
   max-width: 900px;
-  margin: 34px 0 0;
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
+  margin: 28px 0 0;
+  padding-top: 0;
   color: #4f555c;
   font-size: 15px;
   font-style: italic;
@@ -238,12 +235,10 @@ a { color: inherit; }
   margin: 0;
   padding: 0;
   list-style: none;
-  border-top: 1px solid var(--text);
 }
 .clean-list li {
   margin: 0;
-  padding: 16px 0 17px;
-  border-bottom: 1px solid var(--line);
+  padding: 10px 0 11px;
   font-size: 15px;
   line-height: 1.55;
 }
