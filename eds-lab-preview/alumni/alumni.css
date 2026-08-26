@@ -143,10 +143,10 @@ a { color: inherit; }
 }
 .record h3 {
   margin: 0 0 6px;
-  font-size: clamp(17px, 1.35vw, 20px);
+  font-size: clamp(16px, 1.25vw, 19px);
   line-height: 1.15;
   font-weight: 570;
-  letter-spacing: -0.022em;
+  letter-spacing: -0.018em;
 }
 .degree {
   margin: 0 0 7px;
