@@ -82,3 +82,96 @@
     font-size: 12px;
   }
 }
+
+/* Preserve the professor site's full bibliographic line below each paper. */
+.pub-meta{
+  font-size:0;
+}
+.pub-meta::before{
+  color:#7d838a;
+  font-size:12.5px;
+  line-height:1.5;
+  font-weight:400;
+  letter-spacing:0;
+}
+main>.year-section:nth-of-type(3) .publication-row:nth-child(1) .pub-meta::before{content:"35th International ACM Conference on Knowledge and Information Management (CIKM) , Rome, Italy, November 2026."}
+main>.year-section:nth-of-type(3) .publication-row:nth-child(2) .pub-meta::before{content:"IEEE Transactions on Automation Science and Engineering, accepted."}
+main>.year-section:nth-of-type(3) .publication-row:nth-child(3) .pub-meta::before{content:"IEEE Transactions on Knowledge and Data Engineering, accepted."}
+main>.year-section:nth-of-type(3) .publication-row:nth-child(4) .pub-meta::before{content:"Forty-Second Annual Conference on Uncertainty in Artificial Intelligence (UAI), Amsterdam, Netherlands, August 2026."}
+main>.year-section:nth-of-type(3) .publication-row:nth-child(5) .pub-meta::before{content:"International Conference on Machine Learning (ICML), Seoul, South Korea, July 2026."}
+main>.year-section:nth-of-type(3) .publication-row:nth-child(6) .pub-meta::before{content:"Technometrics, https://doi.org/10.1080/00401706.2026.2637593."}
+main>.year-section:nth-of-type(4) .publication-row:nth-child(1) .pub-meta::before{content:"Conference on Neural Information Processing Systems (NeurIPS), San Diego, USA, December 2025."}
+main>.year-section:nth-of-type(4) .publication-row:nth-child(2) .pub-meta::before{content:"International Conference on Computer Vision (ICCV) 2025, Honolulu, Hawaii, USA, October 2025."}
+main>.year-section:nth-of-type(4) .publication-row:nth-child(3) .pub-meta::before{content:"Computers & Industrial Engineering, 209, 111393."}
+main>.year-section:nth-of-type(4) .publication-row:nth-child(4) .pub-meta::before{content:"IISE Transactions, 57(4), 380-392."}
+main>.year-section:nth-of-type(4) .publication-row:nth-child(5) .pub-meta::before{content:"Computational Statistics and Data Analysis, 204, 108097."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(1) .pub-meta::before{content:"European Conference on Computer Vision (ECCV) 2024, Milan, Italy, September 2024."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(2) .pub-meta::before{content:"International Conference on Machine Learning (ICML), Vienna, Austria, July 2024."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(3) .pub-meta::before{content:"ASME Journal of Manufacturing Science and Engineering, 146(7), 070903."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(4) .pub-meta::before{content:"ASME Journal of Manufacturing Science and Engineering, 146(7), 070902."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(5) .pub-meta::before{content:"IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024, Seattle, USA, June 2024."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(6) .pub-meta::before{content:"Technometrics, 66(3), 470-482. (IISE Quality Control and Reliability Engineering (QCRE) Track Best Paper Competition Finalist)"}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(7) .pub-meta::before{content:"ACM Computing Surveys, 56(9), 1-33."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(8) .pub-meta::before{content:"Quality Engineering, 36(4), 713-725."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(9) .pub-meta::before{content:"IEEE Transactions on Knowledge and Data Engineering, 36, 2629-2642."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(10) .pub-meta::before{content:"Quality Engineering, 36(4), 743-757."}
+main>.year-section:nth-of-type(5) .publication-row:nth-child(11) .pub-meta::before{content:"Statistical Analysis and Data Mining, 17(1), e11649."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(1) .pub-meta::before{content:"IEEE Transactions on Semiconductor Manufacturing, 36(3), 425-433."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(2) .pub-meta::before{content:"IEEE Transactions on Semiconductor Manufacturing, 36(2), 220-230."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(3) .pub-meta::before{content:"Quality Engineering, 35(4), 686-695."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(4) .pub-meta::before{content:"Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI-23), Washington, DC, USA, February 2023."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(5) .pub-meta::before{content:"IISE Transactions, 55(5), 433-444."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(6) .pub-meta::before{content:"Technometrics, 65(1), 83-95."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(7) .pub-meta::before{content:"IISE Transactions, 55(2), 147-155."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(8) .pub-meta::before{content:"International Journal of Production Research , 61(4), 1101-1113."}
+main>.year-section:nth-of-type(6) .publication-row:nth-child(9) .pub-meta::before{content:"IEEE/CAA Journal of Automatica Sinica, 10(1), 42-66."}
+main>.year-section:nth-of-type(7) .publication-row:nth-child(1) .pub-meta::before{content:"IISE Transactions, 54(7), 686-698. (Selected as a featured article and highlighted in the ISE magazine)"}
+main>.year-section:nth-of-type(7) .publication-row:nth-child(2) .pub-meta::before{content:"International Journal of Remote Sensing , 43(6), 2296-2314."}
+main>.year-section:nth-of-type(7) .publication-row:nth-child(3) .pub-meta::before{content:"Military Operations Research, 27(1), 45-72."}
+main>.year-section:nth-of-type(8) .publication-row:nth-child(1) .pub-meta::before{content:"Conference on Neural Information Processing Systems (NeurIPS) 2021."}
+main>.year-section:nth-of-type(8) .publication-row:nth-child(2) .pub-meta::before{content:"Conference on Neural Information Processing Systems (NeurIPS) 2021."}
+main>.year-section:nth-of-type(8) .publication-row:nth-child(3) .pub-meta::before{content:"International Conference on Machine Learning (ICML) 2021."}
+main>.year-section:nth-of-type(8) .publication-row:nth-child(4) .pub-meta::before{content:"Journal of Nonparametric Statistics, 33, 249-272."}
+main>.year-section:nth-of-type(8) .publication-row:nth-child(5) .pub-meta::before{content:"Journal of Statistical Computation and Simulation, 91, 2551-2568."}
+main>.year-section:nth-of-type(8) .publication-row:nth-child(6) .pub-meta::before{content:"Scientific Reports, 11, 4457."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(1) .pub-meta::before{content:"Conference on Neural Information Processing Systems (NeurIPS) 2020."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(2) .pub-meta::before{content:"IEEE Transactions on Semiconductor Manufacturing , 33(4), 653-662."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(3) .pub-meta::before{content:"Spatial Statistics , 39, 100467."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(4) .pub-meta::before{content:"IEEE Transactions on Semiconductor Manufacturing, 33(4), 622-634."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(5) .pub-meta::before{content:"Statistical Methods in Medical Research, 29(11), 3381-3395."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(6) .pub-meta::before{content:"IEEE Transactions on Semiconductor Manufacturing, 33(3), 466-475."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(7) .pub-meta::before{content:"Technometrics, 62(3), 313-329."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(8) .pub-meta::before{content:"Technometrics, 62(2), 173-183."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(9) .pub-meta::before{content:"IEEE Transactions on Industrial Informatics, 16(4), 2868-2877."}
+main>.year-section:nth-of-type(9) .publication-row:nth-child(10) .pub-meta::before{content:"Journal of Agricultural, Biological, and Environmental Statistics, 25, 74-89."}
+main>.year-section:nth-of-type(10) .publication-row:nth-child(1) .pub-meta::before{content:"International Conference on Machine Learning (ICML), pp. 3071-3079, Long Beach, CA, USA, June 2019. (Acceptance rate: 22.6%)"}
+main>.year-section:nth-of-type(10) .publication-row:nth-child(2) .pub-meta::before{content:"Journal of the Royal Statistical Society: Series A, 182(3), 1003-1016."}
+main>.year-section:nth-of-type(10) .publication-row:nth-child(3) .pub-meta::before{content:"Geographical Analysis, 51(4), 475-499."}
+main>.year-section:nth-of-type(10) .publication-row:nth-child(4) .pub-meta::before{content:"Journal of the Royal Statistical Society: Series C, 68(1), 99-120."}
+main>.year-section:nth-of-type(10) .publication-row:nth-child(5) .pub-meta::before{content:"Journal of Business & Industrial Marketing, 34(4), 891-901."}
+main>.year-section:nth-of-type(11) .publication-row:nth-child(1) .pub-meta::before{content:"PLoS ONE, 13(1), e0204874."}
+main>.year-section:nth-of-type(11) .publication-row:nth-child(2) .pub-meta::before{content:"Journal of Statistical Computation and Simulation, 88(15), 2982-2999."}
+main>.year-section:nth-of-type(11) .publication-row:nth-child(3) .pub-meta::before{content:"IEEE Transactions on Semiconductor Manufacturing, 31(3), 395-402 ."}
+main>.year-section:nth-of-type(11) .publication-row:nth-child(4) .pub-meta::before{content:"IISE Transactions, 50(2), 99-111. (Selected as a featured article and highlighted in the ISE magazine)"}
+main>.year-section:nth-of-type(11) .publication-row:nth-child(5) .pub-meta::before{content:"Annals of Operations Research, 263, 69-91."}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(1) .pub-meta::before{content:"Technometrics, 59(4), 521-527."}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(2) .pub-meta::before{content:"Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(3), Article 65. (Presented at UbiComp 2017)"}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(3) .pub-meta::before{content:"International Journal of Production Research, 55(20), 5865-5880."}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(4) .pub-meta::before{content:"Biomedical Signal Processing and Control, 36, 176-182."}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(5) .pub-meta::before{content:"Journal of the Operational Research Society, 68(2), 182-191."}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(6) .pub-meta::before{content:"Journal of Quality Technology, 49(1), 11-26."}
+main>.year-section:nth-of-type(12) .publication-row:nth-child(7) .pub-meta::before{content:"International Journal of Advanced Manufacturing Technology, 89(1), 1137-1147."}
+main>.year-section:nth-of-type(13) .publication-row:nth-child(1) .pub-meta::before{content:"ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp)."}
+main>.year-section:nth-of-type(13) .publication-row:nth-child(2) .pub-meta::before{content:"International Joint Conference on Articial Intelligence (IJCAI)."}
+main>.year-section:nth-of-type(13) .publication-row:nth-child(3) .pub-meta::before{content:"Quality and Reliability Engineering International, 32(8), 2685-2700."}
+main>.year-section:nth-of-type(13) .publication-row:nth-child(4) .pub-meta::before{content:"IEEE Intelligent Systems, 31(5), 50-56."}
+main>.year-section:nth-of-type(13) .publication-row:nth-child(5) .pub-meta::before{content:"International Journal of Forecasting, 32(3), 669-679."}
+main>.year-section:nth-of-type(14) .publication-row:nth-child(1) .pub-meta::before{content:"International Journal of Production Research, 53(17), 5354-5368."}
+main>.year-section:nth-of-type(14) .publication-row:nth-child(2) .pub-meta::before{content:"Naval Research Logistics, 62(2), 127-142."}
+main>.year-section:nth-of-type(15) .publication-row:nth-child(1) .pub-meta::before{content:"Electronic Journal of Statistics, 8, 159-183."}
+main>.year-section:nth-of-type(15) .publication-row:nth-child(2) .pub-meta::before{content:"IEEE Transactions on Automation Science and Engineering, 11(2), 327-337."}
+main>.year-section:nth-of-type(15) .publication-row:nth-child(3) .pub-meta::before{content:"Annals of Operations Research, 216, 307-325."}
+main>.year-section:nth-of-type(16) .publication-row:nth-child(1) .pub-meta::before{content:"Applied Mathematics Letters, 26(7), 774-779."}
+main>.year-section:nth-of-type(16) .publication-row:nth-child(2) .pub-meta::before{content:"Data Mining and Knowledge Discovery, 26(3), 512-532."}
+main>.year-section:nth-of-type(17) .publication-row:nth-child(1) .pub-meta::before{content:"Journal of Nonparametric Statistics, 24(3), 665-680."}
+main>.year-section:nth-of-type(18) .publication-row:nth-child(1) .pub-meta::before{content:"IEEE International Conference on Data Mining (ICDM), 28-37."}
