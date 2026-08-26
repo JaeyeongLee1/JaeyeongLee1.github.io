@@ -3,178 +3,220 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Prototype redesign for the Engineering Data Science Lab at KAIST." />
+  <meta name="description" content="Engineering Data Science Lab, KAIST — research, publications, members, and alumni." />
   <title>Engineering Data Science Lab | KAIST</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="Engineering Data Science Lab home">
       <span class="seal">EDS</span>
-      <span class="wordmark-text"><strong>Engineering Data Science Lab</strong><small>KAIST · Industrial & Systems Engineering</small></span>
+      <span class="wordmark-text">
+        <strong>Engineering Data Science Lab</strong>
+        <small>Department of Industrial & Systems Engineering · KAIST</small>
+      </span>
     </a>
     <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <a href="#research">Research</a>
-      <a href="#work">Selected Work</a>
-      <a href="#people">People</a>
-      <a href="#legacy">Legacy</a>
+      <a href="#record">Publications</a>
+      <a href="#professor">Professor</a>
+      <a href="#members">Members</a>
+      <a href="#alumni">Alumni</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section-shell">
-      <p class="eyebrow">Engineering Data Science Lab · KAIST</p>
-      <h1>Statistics with depth.<br>Artificial intelligence with rigor.<br>Engineering with consequence.</h1>
-      <p class="hero-copy">
-        We develop data science methodologies for complex real-world systems, bringing together statistical thinking,
-        modern artificial intelligence, and the discipline of industrial engineering.
-      </p>
-      <div class="hero-rule" aria-hidden="true"></div>
-      <div class="hero-note">
-        <span>Statistics</span><i>×</i><span>Artificial Intelligence</span><i>×</i><span>Industrial Systems</span>
+      <p class="kicker">Engineering Data Science Lab · KAIST</p>
+      <h1>Statistics<br>Data Science<br>Artificial Intelligence<br>Quality Engineering</h1>
+
+      <div class="record-grid" aria-label="Publication record">
+        <div class="record-item">
+          <strong>64</strong>
+          <span>SCIE journal entries</span>
+        </div>
+        <div class="record-item">
+          <strong>17</strong>
+          <span>Top-tier AI conference entries</span>
+        </div>
+        <div class="record-item text-record">
+          <span class="record-years">2012–2026</span>
+          <span>Publication list on the current laboratory website</span>
+        </div>
       </div>
     </section>
 
-    <section class="manifesto section-shell split" id="research">
-      <div>
-        <p class="eyebrow">A research tradition in three languages</p>
-        <h2>One laboratory, three intellectual homes.</h2>
+    <section class="facts section-shell" id="record">
+      <div class="section-title-row">
+        <p class="kicker">Publication Record</p>
+        <h2>Selected venues and recent publications</h2>
       </div>
-      <div class="prose">
-        <p>
-          Our work is united by a simple conviction: difficult engineering problems deserve methods that are not only useful,
-          but also statistically principled and intellectually durable.
-        </p>
-        <p>
-          The laboratory moves comfortably between Bayesian modeling, uncertainty and causal reasoning, modern deep learning,
-          time-series and spatio-temporal analysis, and quality-oriented industrial applications.
-        </p>
-      </div>
-    </section>
 
-    <section class="pillars section-shell" aria-label="Research pillars">
-      <article class="pillar">
-        <span class="roman">I</span>
-        <h3>Statistical Foundations</h3>
-        <p>Bayesian modeling, nonparametrics, spatial and spatio-temporal statistics, uncertainty quantification, causal inference, and principled learning under incomplete information.</p>
-      </article>
-      <article class="pillar">
-        <span class="roman">II</span>
-        <h3>Artificial Intelligence</h3>
-        <p>Deep generative models, evidential learning, semi-supervised learning, domain generalization, representation learning, anomaly detection, and robust predictive systems.</p>
-      </article>
-      <article class="pillar">
-        <span class="roman">III</span>
-        <h3>Industrial Intelligence</h3>
-        <p>Methods shaped by real systems: manufacturing quality, multistage processes, semiconductor analytics, time-series monitoring, optimization, and engineering decision support.</p>
-      </article>
-    </section>
-
-    <section class="selected-work section-shell" id="work">
-      <div class="section-heading">
-        <p class="eyebrow">Selected recent work</p>
-        <h2>Different venues. One research character.</h2>
-        <p>Statistical journals, top AI conferences, and engineering research are presented side by side because the laboratory treats them as one continuum.</p>
+      <div class="venue-line">
+        <span>Technometrics</span>
+        <span>JRSS Series A</span>
+        <span>JRSS Series C</span>
+        <span>ICML</span>
+        <span>NeurIPS</span>
+        <span>UAI</span>
+        <span>CVPR</span>
+        <span>ICCV</span>
+        <span>ECCV</span>
+        <span>IEEE T-ASE</span>
+        <span>IEEE TKDE</span>
       </div>
+
       <div class="work-list">
         <article>
           <time>2026 · UAI</time>
           <h3>Nonlocal Bayesian Modeling of Continuous Spatio-Temporal Dynamics</h3>
-          <p>J. Lee and H. Kim</p>
-        </article>
-        <article>
-          <time>2026 · IEEE T-ASE</time>
-          <h3>Knowledge-Assisted Multi-Graph Dependency Learning for Multivariate Time Series Anomaly Detection in Multi-Stage Industrial Processes</h3>
-          <p>J. Lee, T. Yoon, W. Koo, and H. Kim</p>
+          <p>J. Lee · H. Kim</p>
         </article>
         <article>
           <time>2026 · ICML</time>
           <h3>Courtroom Analogy: New Perspective on Uncertainty-Aware Classification</h3>
-          <p>T. Yoon and H. Kim</p>
+          <p>T. Yoon · H. Kim</p>
         </article>
         <article>
           <time>2026 · Technometrics</time>
           <h3>Multimodal Deep Generative Model for Semi-Supervised Learning under Class Imbalance</h3>
-          <p>H. Yoon and H. Kim</p>
+          <p>H. Yoon · H. Kim</p>
+        </article>
+        <article>
+          <time>2026 · IEEE T-ASE · Accepted</time>
+          <h3>Knowledge-Assisted Multi-Graph Dependency Learning for Multivariate Time Series Anomaly Detection in Multi-Stage Industrial Processes</h3>
+          <p>J. Lee · T. Yoon · W. Koo · H. Kim</p>
+        </article>
+        <article>
+          <time>2026 · IEEE TKDE · Accepted</time>
+          <h3>Order-based Causal Discovery for Multistage Processes</h3>
+          <p>E.-Y. Ma · J. Jung · H. Kim</p>
         </article>
         <article>
           <time>2025 · NeurIPS</time>
           <h3>Uncertainty Estimation by Flexible Evidential Deep Learning</h3>
-          <p>T. Yoon and H. Kim</p>
+          <p>T. Yoon · H. Kim</p>
+        </article>
+        <article>
+          <time>2025 · ICCV</time>
+          <h3>Learnable Logit Adjustment for Imbalanced Semi-Supervised Learning under Class Distribution Mismatch</h3>
+          <p>H. Lee · T. Park · H. Kim</p>
+        </article>
+        <article>
+          <time>2024 · CVPR</time>
+          <h3>CDMAD: Class-Distribution-Mismatch-Aware Debiasing for Class-Imbalanced Semi-Supervised Learning</h3>
+          <p>H. Lee · H. Kim</p>
+        </article>
+        <article>
+          <time>2024 · ICML</time>
+          <h3>Uncertainty Estimation by Density Aware Evidential Deep Learning</h3>
+          <p>T. Yoon · H. Kim</p>
+        </article>
+        <article>
+          <time>2024 · ECCV</time>
+          <h3>Rebalancing Using Estimated Class Distribution for Imbalanced Semi-Supervised Learning under Class Distribution Mismatch</h3>
+          <p>T. Park · H. Lee · H. Kim</p>
         </article>
         <article>
           <time>2024 · Technometrics</time>
           <h3>Deep Latent Factor Model for Spatio-Temporal Forecasting</h3>
-          <p>W. Koo, E.-Y. Ma, and H. Kim</p>
+          <p>W. Koo · E.-Y. Ma · H. Kim</p>
         </article>
       </div>
-      <p class="source-note">Prototype content is based on the laboratory's current public website. A production version should link every item to DOI, proceedings, code, and project pages.</p>
     </section>
 
-    <section class="professor section-shell split">
-      <div>
-        <p class="eyebrow">Professor</p>
+    <section class="professor section-shell" id="professor">
+      <div class="section-title-row">
+        <p class="kicker">Professor</p>
         <h2>Heeyoung Kim</h2>
-        <p class="title-line">KAIST Endowed Chair Professor · Industrial & Systems Engineering · Graduate School of AI</p>
       </div>
-      <div class="prose professor-copy">
-        <p>
-          Professor Kim's academic training joins industrial engineering and statistics, including an M.S. in Statistics and a Ph.D. in Industrial Engineering with specialization in Statistics from Georgia Tech.
-        </p>
-        <p>
-          Her research and editorial service span Technometrics, IISE Transactions, IEEE Transactions on Automation Science and Engineering, and the broader statistics, AI, and quality engineering communities.
-        </p>
+
+      <div class="professor-grid">
+        <div class="fact-column">
+          <h3>Current Appointments</h3>
+          <p>KAIST Endowed Chair Professor</p>
+          <p>Associate Professor, Department of Industrial & Systems Engineering, KAIST</p>
+          <p>Adjunct Professor, Graduate School of Artificial Intelligence, KAIST</p>
+        </div>
+        <div class="fact-column">
+          <h3>Education</h3>
+          <p>Ph.D. in Industrial Engineering, specialization in Statistics · Georgia Institute of Technology · 2011</p>
+          <p>M.S. in Statistics · Georgia Institute of Technology · 2008</p>
+          <p>M.S. in Industrial Engineering · KAIST · 2005</p>
+          <p>B.S. in Industrial Engineering · KAIST · 2003</p>
+        </div>
+        <div class="fact-column">
+          <h3>Editorship</h3>
+          <p>Associate Editor · Technometrics · 2025–present</p>
+          <p>Associate Editor · IISE Transactions · 2020–present</p>
+          <p>Associate Editor · IEEE Transactions on Automation Science and Engineering · 2021–2023</p>
+        </div>
+        <div class="fact-column">
+          <h3>Selected Honors</h3>
+          <p>KAIST Endowed Chair Professor · 2025</p>
+          <p>Korea Assistant Vice President (International), IISE · 2025–2028</p>
+          <p>KAIST Academic Excellence Award · 2022</p>
+          <p>KAIST Top 10 Research Achievements of 2018 · selected in 2019</p>
+          <p>Technology Innovation Award, College of Engineering, KAIST · 2019</p>
+        </div>
       </div>
     </section>
 
-    <section class="people section-shell" id="people">
-      <div class="section-heading compact">
-        <p class="eyebrow">Current members</p>
-        <h2>A small group, deliberately broad.</h2>
+    <section class="members section-shell" id="members">
+      <div class="section-title-row">
+        <p class="kicker">Current Members</p>
+        <h2>6 Ph.D. students · 1 M.S. student</h2>
       </div>
+
       <div class="people-grid">
-        <article><h3>Junsub Jung</h3><p>Causal Inference</p><span>Ph.D. · 2021</span></article>
-        <article><h3>Taeseong Yoon</h3><p>Uncertainty Quantification</p><span>Ph.D. · 2023</span></article>
-        <article><h3>Taemin Park</h3><p>Class-Imbalanced Semi-Supervised Learning</p><span>Ph.D. · 2024</span></article>
-        <article><h3>Jaeyeong Lee</h3><p>Spatio-Temporal Modeling · Bayesian Deep Learning</p><span>Ph.D. · 2024</span></article>
-        <article><h3>Insoo Jung</h3><p>Causal Inference</p><span>Ph.D. · 2025</span></article>
-        <article><h3>Seungjun Choi</h3><p>Domain Generalization · Tabular Foundation Models</p><span>Ph.D. · 2026</span></article>
-        <article><h3>Kyeongjun Lee</h3><p>Time-Series Analysis</p><span>M.S. · 2025</span></article>
+        <article><h3>Junsub Jung</h3><p>Causal Inference</p><span>Ph.D. · Entry 2021</span></article>
+        <article><h3>Taeseong Yoon</h3><p>Uncertainty Quantification</p><span>Ph.D. · Entry 2023</span></article>
+        <article><h3>Taemin Park</h3><p>Class-Imbalanced Semi-Supervised Learning</p><span>Ph.D. · Entry 2024</span></article>
+        <article><h3>Jaeyeong Lee</h3><p>Spatio-Temporal Modeling · Bayesian Deep Learning</p><span>Ph.D. · Entry 2024</span></article>
+        <article><h3>Insoo Jung</h3><p>Causal Inference</p><span>Ph.D. · Entry 2025</span></article>
+        <article><h3>Seungjun Choi</h3><p>Domain Generalization · Tabular Foundation Model</p><span>Ph.D. · Entry 2026</span></article>
+        <article><h3>Kyeongjun Lee</h3><p>Time-Series Analysis</p><span>M.S. · Entry 2025</span></article>
       </div>
     </section>
 
-    <section class="legacy section-shell" id="legacy">
-      <div class="legacy-mark" aria-hidden="true">∴</div>
-      <div class="legacy-copy">
-        <p class="eyebrow">Continuity</p>
-        <h2>Methods change. Standards should not.</h2>
-        <p>
-          The laboratory's publication record extends from statistical methodology and spatial modeling to Bayesian learning,
-          modern AI, causal analysis, industrial analytics, and top-tier machine learning conferences. Alumni have continued into
-          academia and research-intensive organizations including universities, NVIDIA, Samsung, KRAFTON AI, Upstage, and others.
-        </p>
+    <section class="alumni section-shell" id="alumni">
+      <div class="section-title-row">
+        <p class="kicker">Selected Alumni</p>
+        <h2>Academic and research affiliations</h2>
+      </div>
+
+      <div class="alumni-list">
+        <article><span>Woojin Soh · Ph.D. 2015</span><strong>NVIDIA</strong></article>
+        <article><span>Yonghan Jung · M.S. 2016</span><strong>Assistant Professor · University of Illinois Urbana-Champaign</strong></article>
+        <article><span>Jihoon Chung · M.S. 2017</span><strong>Assistant Professor · Hanyang University</strong></article>
+        <article><span>Hyojoong Kim · Ph.D. 2022</span><strong>Assistant Professor · Myongji University</strong></article>
+        <article><span>Keunseo Kim · Ph.D. 2022</span><strong>Samsung Advanced Institute of Technology</strong></article>
+        <article><span>Hyuck Lee · Ph.D. 2024</span><strong>KRAFTON AI</strong></article>
+        <article><span>Heegeon Yoon · Ph.D. 2025</span><strong>Samsung Electronics</strong></article>
+        <article><span>Eun-Yeol Ma · Ph.D. 2025</span><strong>Samsung AI Center</strong></article>
+        <article><span>Hyeonwoo Kim · M.S. 2022</span><strong>Upstage</strong></article>
       </div>
     </section>
 
     <section class="contact section-shell" id="contact">
-      <p class="eyebrow">Engineering Data Science Lab</p>
-      <h2>KAIST, Daejeon</h2>
-      <p>Department of Industrial and Systems Engineering<br>291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea</p>
-      <div class="contact-links">
-        <a href="https://eds.kaist.ac.kr/">Current lab website</a>
-        <a href="mailto:heeyoungkim@kaist.ac.kr">heeyoungkim@kaist.ac.kr</a>
+      <div class="section-title-row">
+        <p class="kicker">Contact</p>
+        <h2>KAIST · Daejeon</h2>
+      </div>
+      <div class="contact-grid">
+        <p>Department of Industrial & Systems Engineering<br>291 Daehak-ro, Yuseong-gu<br>Daejeon 34141, Republic of Korea</p>
+        <p>Professor Heeyoung Kim<br>E2-1 #4214<br>+82-42-350-3125<br>heeyoungkim(at)kaist.ac.kr</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>Engineering Data Science Lab · KAIST</span>
-    <span>Prototype redesign · 2026</span>
+    <a href="https://eds.kaist.ac.kr/">Current official website</a>
   </footer>
 
   <script src="script.js"></script>
