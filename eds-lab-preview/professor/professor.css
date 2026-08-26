@@ -140,7 +140,7 @@ a { color: inherit; }
   position: relative;
   margin: 0;
   padding-top: 3px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.35;
   font-weight: 650;
   letter-spacing: -0.01em;
@@ -181,12 +181,15 @@ a { color: inherit; }
   letter-spacing: -0.04em;
 }
 .professor-info p {
-  margin: 0 0 9px;
-  font-size: 15px;
+  margin: 0 0 10px;
+  font-size: 16px;
 }
 .professor-info .chair {
-  margin-bottom: 16px;
-  font-weight: 650;
+  margin-bottom: 18px;
+  font-size: clamp(18px, 1.65vw, 21px);
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -0.018em;
 }
 .contact-block {
   margin-top: 28px;
@@ -204,13 +207,14 @@ a { color: inherit; }
 }
 .interests div {
   position: relative;
-  min-height: 78px;
+  min-height: 82px;
   padding-top: 19px;
   display: flex;
   align-items: flex-start;
-  font-size: clamp(18px, 1.65vw, 23px);
-  font-weight: 500;
-  letter-spacing: -0.025em;
+  font-size: clamp(20px, 1.85vw, 25px);
+  line-height: 1.28;
+  font-weight: 520;
+  letter-spacing: -0.028em;
 }
 .interests div::before {
   content: "";
@@ -226,7 +230,7 @@ a { color: inherit; }
   margin: 28px 0 0;
   padding-top: 0;
   color: #4f555c;
-  font-size: 15px;
+  font-size: 16px;
   font-style: italic;
   line-height: 1.65;
 }
@@ -238,9 +242,10 @@ a { color: inherit; }
 }
 .clean-list li {
   margin: 0;
-  padding: 10px 0 11px;
-  font-size: 15px;
-  line-height: 1.55;
+  padding: 11px 0 12px;
+  font-size: 17px;
+  line-height: 1.58;
+  letter-spacing: -0.008em;
 }
 
 .site-footer {
@@ -322,5 +327,6 @@ a { color: inherit; }
   .intro h1 { font-size: 42px; }
   .interests { grid-template-columns: 1fr; gap: 20px; }
   .interests div { min-height: 56px; }
+  .clean-list li { font-size: 16px; }
   .footer-inner { flex-direction: column; }
 }
