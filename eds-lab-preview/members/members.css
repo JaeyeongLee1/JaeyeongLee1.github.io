@@ -156,25 +156,19 @@ a { color: inherit; }
   text-decoration: none;
 }
 .member h3 a::after {
-  content: "↗";
-  display: inline-flex;
-  width: 17px;
-  height: 17px;
-  margin-left: 7px;
-  border: 1px solid #c8ccd0;
-  align-items: center;
-  justify-content: center;
-  color: #666c73;
-  font-size: 10px;
+  content: "SITE";
+  display: inline-block;
+  margin-left: 9px;
+  color: #7c8288;
+  font-size: .42em;
   line-height: 1;
-  font-weight: 500;
-  letter-spacing: 0;
-  vertical-align: 3px;
-  transition: border-color .15s ease, color .15s ease;
+  font-weight: 700;
+  letter-spacing: .12em;
+  vertical-align: .52em;
+  transition: color .15s ease;
 }
 .member h3 a:hover::after {
-  border-color: #656b72;
-  color: var(--text);
+  color: #c96a2f;
 }
 .research-interest {
   min-height: 48px;
