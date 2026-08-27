@@ -54,7 +54,7 @@ a { color: inherit; }
   color: var(--text);
   font-size: 1.34em;
   line-height: .72;
-  font-weight: 850;
+  font-weight: 780;
   letter-spacing: -0.055em;
   vertical-align: -0.035em;
 }
@@ -153,12 +153,21 @@ a { color: inherit; }
   letter-spacing: -0.035em;
 }
 .member h3 a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  text-decoration-color: #aeb3b8;
+  text-decoration: none;
 }
-.member h3 a:hover {
-  text-decoration-color: var(--text);
+.member h3 a::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 5px;
+  color: #8d9399;
+  font-size: .62em;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0;
+  vertical-align: .34em;
+}
+.member h3 a:hover::after {
+  color: var(--text);
 }
 .research-interest {
   min-height: 48px;
