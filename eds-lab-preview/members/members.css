@@ -157,16 +157,23 @@ a { color: inherit; }
 }
 .member h3 a::after {
   content: "↗";
-  display: inline-block;
-  margin-left: 5px;
-  color: #8d9399;
-  font-size: .62em;
+  display: inline-flex;
+  width: 17px;
+  height: 17px;
+  margin-left: 7px;
+  border: 1px solid #c8ccd0;
+  align-items: center;
+  justify-content: center;
+  color: #666c73;
+  font-size: 10px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
-  vertical-align: .34em;
+  vertical-align: 3px;
+  transition: border-color .15s ease, color .15s ease;
 }
 .member h3 a:hover::after {
+  border-color: #656b72;
   color: var(--text);
 }
 .research-interest {
