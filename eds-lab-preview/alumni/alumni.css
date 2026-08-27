@@ -249,3 +249,33 @@ a { color: inherit; }
   .thesis { font-size: 14px; }
   .footer-inner { flex-direction: column; }
 }
+
+/* Header experiment: compact EDS mark + full lab name. */
+.brand {
+  align-items: center;
+  gap: 16px;
+}
+.brand strong {
+  font-size: 0;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.brand strong .eds-initial {
+  color: #c96a2f;
+  font-size: 28px;
+  line-height: .86;
+  font-weight: 820;
+  letter-spacing: -0.07em;
+  vertical-align: 0;
+}
+.brand > span {
+  font-size: 0;
+  line-height: 1.2;
+}
+.brand > span::before {
+  content: "Engineering Data Science Lab.";
+  color: #50555b;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
