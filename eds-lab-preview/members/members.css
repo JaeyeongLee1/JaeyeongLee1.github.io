@@ -159,7 +159,7 @@ a { color: inherit; }
 }
 .member h3 a:hover,
 .member h3 a:focus-visible {
-  color: #1f5f8f;
+  color: #c96a2f;
 }
 .member h3 a:focus-visible {
   outline: none;
