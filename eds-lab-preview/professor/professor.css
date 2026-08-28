@@ -420,3 +420,19 @@ a { color: inherit; }
     font-size: 17px;
   }
 }
+
+/* One-detail logo test: a tiny chamfer on the D only. */
+.brand strong .eds-d {
+  position: relative;
+}
+.brand strong .eds-d::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 5px;
+  height: 5px;
+  background: #ffffff;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  pointer-events: none;
+}
