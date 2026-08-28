@@ -400,3 +400,23 @@ a { color: inherit; }
   letter-spacing: -0.055em;
   vertical-align: 0;
 }
+
+/* Improve readability of professor details and section content. */
+.section > h2 {
+  font-size: 18px;
+}
+.professor-info p {
+  font-size: 17.5px;
+  line-height: 1.55;
+}
+.lab-goal {
+  font-size: 17px;
+}
+.clean-list li {
+  font-size: 18px;
+}
+@media (max-width: 520px) {
+  .clean-list li {
+    font-size: 17px;
+  }
+}
