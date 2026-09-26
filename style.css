@@ -776,3 +776,24 @@ footer p {
   letter-spacing: 0.02em;
   justify-content: center;
 }
+
+
+.publication-label.prep-label-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.publications-section .publication-label span.prep-label {
+  width: auto;
+  min-height: 0;
+  padding: 0;
+  border: none !important;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #5b6268;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
