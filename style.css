@@ -756,3 +756,13 @@ footer p {
     gap: 3px;
   }
 }
+
+
+.publication-label span.prep-label {
+  border: 0;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: flex-start;
+  color: #6f7780;
+}
